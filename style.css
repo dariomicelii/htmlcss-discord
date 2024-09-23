@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
   }
   
   /* UTILS */
@@ -18,33 +19,52 @@
     .upper-header .container{
         display: flex;
         padding: 30px 0px;
+        align-items: center;
     }
 
     .upper-logo{
-        background-color: orange;
         min-width: 20%;
         padding: 5px 10px;
-        border: 2px dashed black;
     }
 
     .upper-links{
-        background-color: orange;
         min-width: 60%;
-        padding: 5px 10px;
+        padding: 5px 20px;
         text-align: center;
-        border: 2px dashed black;
+        font-size: 20px;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover{
+        color: black;
+    }
+
+    .link-list li{
+        display: inline;
+        padding: 0px 10px;
     }
 
     .upper-login{
-        background-color: orange;
         min-width: 20%;
         padding: 5px 10px;
         text-align: end;
-        border: 2px dashed black;
+        font-size: 20px;
+        color: black;
+        background-color: white;
+        border-radius: 20px;
     }
 
+    .upper-login:hover{
+        color: #255ee9;
+    }
+
+
     .upper-header{
-        background-color: aqua;
+        background-color: #255ee9;
     }
 
     .lower-header .container{
@@ -54,15 +74,55 @@
     }
 
     .lower-header{
-        background-color: blue;
+        background-image: url(./img/jumbo.png);
+        background-size: 100%;
     }
 
     .hero{
         flex-basis: 100%;
-        height: 300px;
-        background-color: green;
-        border: 2px dashed black;
+        height: 450px;
     }
+
+    .hero h1{
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 40px;
+        padding-top: 120px;
+        color: white;
+    }
+
+    .hero p{
+        font-size: 18px;
+        text-align: center;
+        padding: 0px 1px;
+        color: white;
+        line-height: 25px;
+    }
+
+    .hero .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .download{
+        background-color: white;
+        font-size: 18px;
+        padding: 10px 20px;
+        border-radius: 20px;
+        margin-right: 10px;
+    }
+
+    .open-browser{
+        color: white;
+        background-color: black;
+        font-size: 18px;
+        padding: 10px 20px;
+        border-radius: 20px;
+        margin-left: 10px;
+    }
+
+
 
     /* MAIN */
 
@@ -87,6 +147,10 @@
 
     .first-section:nth-child(even){
         background-color: grey;
+    }
+
+    .reverse{
+        flex-direction: row-reverse;
     }
 
 
@@ -129,6 +193,7 @@
         flex-basis: 25%;
         border: 2px dashed white;
     }
+
 
     /* LOWER FOOTER */
 
